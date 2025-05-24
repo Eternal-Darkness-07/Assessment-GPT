@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import MCQCard from "./mcqcard.jsx";
+import MCQCard from "./MCQCard.jsx";
 import { getQuestions } from "../api/api.js";
 
 const TestPage = () => {
