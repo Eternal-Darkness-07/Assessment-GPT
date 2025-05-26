@@ -5,6 +5,8 @@ dotenv.config();
 
 export const getQuestions = async (req, res) => {
   const { topic, count } = req.body;
+  count = Math.min(10, count); //Max 10 questions will be generate
+
 
   if (!process.env.API_KEY) {
     return res.status(500).json({ error: "API key not configured" });
