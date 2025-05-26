@@ -4,7 +4,7 @@ import { ForQuestions } from "../utils/prompts.js";
 dotenv.config();
 
 export const getQuestions = async (req, res) => {
-  const { topic, count } = req.body;
+  let { topic, count } = req.body;
   count = Math.min(10, count); //Max 10 questions will be generate
 
 
