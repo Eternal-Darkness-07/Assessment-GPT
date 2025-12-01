@@ -24,7 +24,7 @@ export const getQuestions = async (req, res) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "deepseek/deepseek-r1-zero:free",
+          model: "nousresearch/hermes-3-llama-3.1-405b:free",
           messages: [
             {
               role: 'system',
